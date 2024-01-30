@@ -3,17 +3,21 @@ import {useState} from "react";
 export default function Form() {
     const [nickname, setNickname] = useState("");
     const [password, setPassword] = useState("");
-    const handlePassword = () => {
-
+    const handlePassword = (e) => {
+        setNickname(e.target.value);
+        console.log(nickname)
     }
-    const handleNickname = () => {
-        
+    const handleNickname = (e) => {
+        setPassword(e.target.value);
+        console.log(password)
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(nickname)
+        console.log(password)
     }
     return(
-        <form onSubmit={}>
+        <form onSubmit={handleSubmit}>
             <fieldset>
                 <legend>User Info</legend>
                 <label htmlFor="nickname">Nickname</label>
