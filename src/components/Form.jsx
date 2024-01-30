@@ -21,9 +21,9 @@ export default function Form() {
             <fieldset>
                 <legend>User Info</legend>
                 <label htmlFor="nickname">Nickname</label>
-                <input type="text" name="nickname" id="nickname" value={nickname} onChange={handleNickname}/>
+                <input type="text" name="nickname" id="nickname" onChange={handleNickname}/>
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" id="password" value={password} onChange={handlePassword}/>
+                <input type="password" name="password" id="password" onChange={handlePassword}/>
                 <button>Submit</button>
             </fieldset>
         </form>
